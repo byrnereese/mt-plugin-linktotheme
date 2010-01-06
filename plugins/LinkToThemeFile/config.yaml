@@ -1,0 +1,17 @@
+id: LinkToThemeFile
+name: "Link Template to Theme"
+description: "A handy plugin to allow for the bulk action of linking a template to the theme's template file on disk. This effectively removes the need to refresh templates. Changes are picked up instantly."
+
+applications:
+  cms:
+    list_actions:
+      template:
+        link:
+          label: 'Link to Theme'
+          order: 201 
+          code:  $LinkToThemeFile::LinkToThemeFile::Plugin::itemset_link
+        unlink:
+          label: 'Unlink to Theme'
+          order: 202
+          code:  $LinkToThemeFile::LinkToThemeFile::Plugin::itemset_unlink
+
